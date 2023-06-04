@@ -1,0 +1,25 @@
+.list-item {
+	margin: 1rem 0;
+	font-size: 30px;
+	width: 100%;
+	background-color: #283346;
+	padding: 1.25rem 1rem;
+	border-radius: 4px;
+
+	&--content {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		p {
+			margin: 0;
+		}
+
+    .actions {
+      display: flex;
+      flex-direction: row;
+      gap: 1rem;
+
+    }
+	}
+}
