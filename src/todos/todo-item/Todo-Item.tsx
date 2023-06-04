@@ -3,7 +3,6 @@ import { Todo } from '../models/todo.model';
 
 // primeReact
 import { Button } from 'primereact/button';
-import { Tooltip } from 'primereact/tooltip';
 
 type TodoItemComponentProps = {
 	todo: Todo;
@@ -19,12 +18,17 @@ export default function TodoItemComponent(props: TodoItemComponentProps) {
 					<Button
 						tooltip='Mark as Done'
 						tooltipOptions={{ position: 'bottom' }}
-					>
-						<i className='pi pi-check'></i>
-					</Button>
-					<Button tooltip='Delete item' tooltipOptions={{ position: 'bottom' }}>
-						<i className='pi pi-trash'></i>
-					</Button>
+						icon='pi pi-check'
+						rounded
+					></Button>
+					<Button
+						tooltip='Delete item'
+						tooltipOptions={{ position: 'bottom' }}
+						icon='pi pi-trash'
+						rounded
+						outlined
+						severity='danger'
+					></Button>
 				</div>
 			</div>
 		</li>
